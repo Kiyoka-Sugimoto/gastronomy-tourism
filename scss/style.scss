@@ -1,0 +1,157 @@
+@use "base" as *;
+@use "page-why" as *;
+@use "page-true" as *;
+@use "page-sowhat" as *;
+
+// header
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(63, 66, 69, 0.35);
+  z-index: 1000;
+}
+
+.header__inner {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 24px;
+}
+
+.header__logo {
+  img {
+    max-width: 432px;
+    height: auto;
+    display: block;
+  }
+}
+
+.header__nav-toggle {
+  margin-left: auto;
+  margin-right: 50px;
+  img {
+    max-width: 51px;
+    display: block;
+  }
+}
+
+// footer
+.footer {
+}
+
+.footer__sushi-map {
+}
+
+.footer__contents {
+  position: relative;
+  text-align: center;
+  color: #1b4865;
+  padding-bottom: 150px;
+}
+
+.footer__contents img {
+  position: absolute;
+  top: -50px;
+  z-index: -1;
+}
+
+.footer__inner {
+  padding-top: 112px;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.footer__lead {
+  padding-top: 66px;
+}
+
+.footer__lead-title {
+  color: #736b36;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.lead-top__text {
+  padding-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  width: 605px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.footer__company {
+  padding-top: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  width: 605px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.footer_company-strong {
+  font-weight: 700;
+}
+
+.footer__lead-team {
+  margin-top: 65px;
+}
+
+.lead-team__memver {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.btn-contact {
+  display: inline-block;
+  width: 678px;
+  background-color: #736b36;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 900;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 115px;
+}
+
+.footer__icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  display: flex;
+  z-index: 10;
+  width: 200px;
+}
+
+.footer__icon img {
+  width: 86px; /* アイコンサイズ */
+  height: auto;
+}
+
+.icon__muntain {
+  padding-left: 120px;
+}
+
+.footer__copyright {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
