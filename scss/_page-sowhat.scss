@@ -1,6 +1,6 @@
 @use "base" as *;
 
-.sowhat_title {
+.sowhat__title {
   font-size: 32px;
   font-weight: 900;
   border-bottom: 2px solid $color-text-blue;
@@ -8,19 +8,19 @@
   padding-bottom: 10px;
 }
 
-.sowhat_title_sub {
+.sowhat__title-sub {
   margin-top: 24px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 8px;
 }
 
-.sowhat_list {
+.sowhat__list {
   display: flex;
   flex-direction: column;
   gap: 45px;
-  padding-top: 55px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 // fv
@@ -54,7 +54,7 @@
 .sowhat-lead {
   background: #f2f6ef;
   color: $color-text-blue;
-  padding-bottom: 30px;
+  padding-bottom: 300px;
 }
 
 .sowhat-lead__inner {
@@ -91,18 +91,54 @@
 
 .sowhat-lead__map {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 130px;
 }
 
-// sowhat-lead-project
-
+// project
 .sowhat-lead-project {
-  background: #f2f6ef;
+  background: #e1eada;
   color: $color-text-blue;
 }
 
 .sowhat-lead-project__inner {
-  padding-top: 41px;
+  padding-top: 100px;
+  padding-bottom: 400px;
   text-align: center;
+}
+
+.project__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 630px;
+  text-align: center;
+  margin-top: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 100px 30px;
+}
+
+.project-contents {
+  width: 87.45%;
+}
+
+.project__item {
+}
+
+.project__item img {
+  width: 291px;
+  height: 182px;
+}
+
+.project__title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-top: 15px;
+}
+
+.project__text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
 }
 

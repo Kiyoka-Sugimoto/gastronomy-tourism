@@ -374,14 +374,17 @@
 }
 
 .true-lead-style__inner {
-  padding: 112px 30px 100px;
+  padding: 112px 30px 220px;
 }
 
 .style-cards {
-  margin-top: 40px;
+  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 50px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .style-card__img img {

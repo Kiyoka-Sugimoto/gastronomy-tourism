@@ -36,6 +36,7 @@
       </div>
     </header>
 
+    <!-- fv -->
     <section class="fv-why">
       <div class="fv-why__inner">
         <h1 class="fv-why__title">
@@ -44,6 +45,7 @@
       </div>
     </section>
 
+    <!-- top_lead -->
     <section class="why-lead">
       <div class="why-lead__inner">
         <h2 class="why-lead__title">Why Toyama Sushi Is So Diverse</h2>
@@ -80,18 +82,19 @@
       </div>
     </section>
 
+    <!-- unique -->
     <section class="why-lead-unique">
       <div class="why-lead-unique__img">
         <img src="./img/why_lead_unique.jpg" alt="" />
       </div>
       <div class="why-lead-unique__inner">
-        <h2 class="why-lead-unique__title why_title">
+        <h2 class="why-lead-unique__title why__title">
           Abundant Ingredients Created by Unique Geography
         </h2>
-        <h3 class="why-lead-unique__sub why_title_sub">
-          富山の自然が生む多彩な食材
+        <h3 class="why-lead-unique__sub why__title-sub">
+          高低差4,000ｍの自然の恵み「しあわせの源」と私たちの営みによって生み出す「多彩な食と風土」
         </h3>
-        <div class="why_lead-unique__list unique__list why_list">
+        <div class="why_lead-unique__list why__list">
           <!-- unique_contents1 -->
           <div class="unique-contents">
             <svg
@@ -122,6 +125,10 @@
                 text text text text text text text text text text text text text
                 text text text text text
               </p>
+              <div class="unique__bottom-img">
+                <img src="./img/why_harmony_bottom1.png" alt="" />
+                <img src="./img/why_harmony_bottom1.png" alt="" />
+              </div>
             </div>
           </div>
 
@@ -136,7 +143,7 @@
             >
               <path d="M998.84 0H0V355.9H998.84V0Z" fill="white" />
             </svg>
-            <div class="unique__inner">
+            <div class="unique__inner unique__inner--rivers">
               <div class="unique__top">
                 <img
                   src="./img/why_unique_item-tateyama.png"
@@ -151,6 +158,10 @@
                 text text text text text text text text text text text text text
                 text text text text text
               </p>
+              <div class="unique__bottom-img">
+                <img src="./img/why_harmony_bottom1.png" alt="" />
+                <img src="./img/why_harmony_bottom1.png" alt="" />
+              </div>
             </div>
           </div>
 
@@ -168,7 +179,9 @@
                 fill="#FFC275"
               />
             </svg>
-            <div class="unique__inner unique__inner--left">
+            <div
+              class="unique__inner unique__inner--left unique__inner--left--bay"
+            >
               <div class="unique__top">
                 <img
                   src="./img/why_unique_item-tateyama.png"
@@ -185,6 +198,10 @@
                 text text text text text text text text text text text text text
                 text text text text text
               </p>
+              <div class="unique__bottom-img">
+                <img src="./img/why_harmony_bottom1.png" alt="" />
+                <img src="./img/why_harmony_bottom1.png" alt="" />
+              </div>
             </div>
           </div>
 
@@ -199,50 +216,30 @@
             >
               <path d="M0 0H998.84V355.9H0V0Z" fill="white" />
             </svg>
-            <div class="unique__inner unique__inner--left">
-              <div class="unique__top">
-                <img
-                  src="./img/why_unique_item-tateyama.png"
-                  alt="アイコン"
-                  class="unique__icon"
-                />
-                <h4 class="unique__title">
-                  Deep-sea currents<br />&melting mountain water
-                </h4>
-              </div>
-              <p class="unique__text">
-                text text text text text text text text text text text text text
-                text text text text text text text text text text text text text
-                text text text text text text text text text text text text text
-                text text text text text
-              </p>
-            </div>
           </div>
         </div>
         <img src="./img/decor/why_unique_decor.png" alt="" />
       </div>
     </section>
 
-    <section class="why-lead-harmony">
-      <div class="why-lead-harmony__top">
-        <div class="why-lead-harmony__img">
+    <!-- nature -->
+    <section class="why-lead-nature">
+      <div class="why-lead-nature__top">
+        <div class="why-lead-nature__img">
           <img src="./img/why_harmony_top1.png" alt="" />
           <img src="./img/why_harmony_top2.png" alt="" />
           <img src="./img/why_harmony_top3.png" alt="" />
         </div>
       </div>
-      <div class="why-lead-harmony__inner">
-        <h2 class="why-lead-harmony__title why_title">
-          A Culinary Culture in Harmony With Nature
-        </h2>
-        <h3 class="why-lead-harmony__sub why_title_sub">
-          自然とともに生きる人々
+      <div class="why-lead-nature__inner">
+        <h2 class="why-lead-nature__title why__title">Life With Nature</h2>
+        <h3 class="why-lead-nature__sub why__title-sub">
+          自然とともに風土をつくる人々
         </h3>
-        <div class="why-lead-harmony__lead harmony__lead why_list">
-          <!-- harmony_contents1 -->
-          <div class="unique-contents harmony-contens">
+        <div class="why-lead-nature__lead why__list">
+          <div class="nature-contens unique-contents">
             <svg
-              class="unique-contents__bg harmony-contens__bg"
+              class="nature-contens__bg unique-contents__bg"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 999 356"
               fill="none"
@@ -252,35 +249,64 @@
                 fill="#FFC275"
               />
             </svg>
-            <div class="unique__inner harmony__inner">
-              <div class="unique__top harmony__top">
-                <img
-                  src="./img/why_unique_item-tateyama.png"
-                  alt="アイコン"
-                  class="unique__icon harmony__icon"
-                />
-                <h4 class="unique__title harmony__title">
-                  Sushi rooted in<br />everyday life and seasons
-                </h4>
+            <div class="nature__inner unique__inner">
+              <!-- nature_contents1 -->
+              <div class="nature__item">
+                <div class="nature__top unique__top">
+                  <img
+                    src="./img/why_unique_item-tateyama.png"
+                    alt="アイコン"
+                    class="nature__icon unique__icon"
+                  />
+                  <h4 class="nature__title unique__title">
+                    Farmers, fishermen, and chefs<br />
+                    who live with the rhythm of nature
+                  </h4>
+                </div>
+                <p class="nature__text unique__text">
+                  text text text text text text text text text text text text
+                  text text text text text text text text text
+                </p>
               </div>
-              <p class="unique__text harmony__text">
-                Blessed by mountain, field, river, and sea ingredients, Toyama’s
-                people have cultivated a unique culinary culture long before the
-                region was named Toyama. Sushi made with salmon, including
-                cherry salmon, is documented in texts from the Heian period
-                (794–1185).<br />
-                For more than 600 years, temple feasts at Zuisenji and Zentokuji
-                included mackerel sushi as part of daytime meals.<br />
-                Fermented river fish sushi, the precursor to today’s masu-zushi,
-                was created during the Edo period<br />
-                (1603-1868) by a samurai of the Toyama domain.<br />
-                Buri-zushi, which sandwiches yellowtail with turnip and ferments
-                it with koji, originated between the mid-Edo and Taisho periods
-                (1912-1926).
-              </p>
+              <!-- nature_contents2 -->
+              <div class="nature__item">
+                <div class="nature__top unique__top">
+                  <img
+                    src="./img/why_unique_item-tateyama.png"
+                    alt="アイコン"
+                    class="nature__icon unique__icon"
+                  />
+                  <h4 class="nature__title unique__title">
+                    Sushi rooted in<br />
+                    everyday life and seasons
+                  </h4>
+                </div>
+                <p class="nature__text unique__text">
+                  text text text text text text text text text text text text
+                  text text text text text text text text text
+                </p>
+              </div>
+              <!-- nature_contents3 -->
+              <div class="nature__item">
+                <div class="nature__top unique__top">
+                  <img
+                    src="./img/why_unique_item-tateyama.png"
+                    alt="アイコン"
+                    class="nature__icon unique__icon"
+                  />
+                  <h4 class="nature__title unique__title">
+                    Interviews: The lives behind Toyama’s sushi traditions<br />(e.g.,
+                    kaburazushi, masuzushi)
+                  </h4>
+                </div>
+                <p class="nature__text unique__text">
+                  text text text text text text text text text text text text
+                  text text text text text text text text text
+                </p>
+              </div>
             </div>
           </div>
-          <div class="unique-contents harmony-contens">
+          <div class="nature-contens unique-contents">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="999"
@@ -290,68 +316,13 @@
             >
               <path d="M0 0H998.84V355.9H0V0Z" fill="white" />
             </svg>
-          </div>
-          <!-- harmony_contents2 -->
-          <div class="unique-contents unique-contents--left">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="999"
-              height="356"
-              viewBox="0 0 999 356"
-              fill="none"
-            >
-              <path
-                d="M728.89 0H0V355.9H998.84V269.95C998.84 120.96 877.88 0 728.89 0Z"
-                fill="#FFC275"
-              />
-            </svg>
-            <div class="unique__inner unique__inner--left harmony__inner--left">
-              <div class="unique__top">
-                <img
-                  src="./img/why_unique_item-tateyama.png"
-                  alt="アイコン"
-                  class="unique__icon harmony__icon"
-                />
-                <h4 class="unique__title">
-                  Farmers, fishermen, and chefs<br />who live with the rhythm of
-                  nature
-                </h4>
-              </div>
-              <p class="unique__text harmony__text">
-                After World War II, the nigiri sushi culture, born and developed
-                in Edo (Tokyo), spread to Toyama. Local chefs have leveraged
-                Toyama’s rich ingredients to establish a distinct nigiri sushi
-                culture. Today,<br />
-                Michelin-starred sushi restaurants have emerged, and nationally
-                renowned chefs and chains have opened branches in Toyama.<br />
-                Moreover, young chefs continue to innovate, creating sushi that
-                challenges traditional norms. Toyama Prefecture and Toyama City
-                even feature “sushi” as a key promotional keyword, and the
-                region’s sushi diversity continues to expand.
-              </p>
-            </div>
-          </div>
-          <div class="unique-contents unique-contents--left">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="999"
-              height="356"
-              viewBox="0 0 999 356"
-              fill="none"
-            >
-              <path d="M0 0H998.84V355.9H0V0Z" fill="white" />
-            </svg>
-            <div class="harmony__bottom-img">
-              <img src="./img/why_harmony_bottom1.png" alt="" />
-              <img src="./img/why_harmony_bottom1.png" alt="" />
-            </div>
           </div>
         </div>
-        <img src="./img/decor/why_harmony_decor.png" alt="" />
       </div>
     </section>
 
     <footer class="footer">
+      <img src="./img/decor/footer_decor.png" alt="" class="footer__decor" />
       <img src="./img/footer_sushi_map.png" alt="" class="footer__sushi-map" />
       <div class="footer__contents">
         <img src="./img/footer_bg.png" alt="" />

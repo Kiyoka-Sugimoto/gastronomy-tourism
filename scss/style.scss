@@ -2,6 +2,7 @@
 @use "page-why" as *;
 @use "page-true" as *;
 @use "page-sowhat" as *;
+@use "page-about" as *;
 
 // header
 .header {
@@ -42,7 +43,14 @@
 .footer {
 }
 
+.footer__decor {
+  position: relative;
+  margin-top: -120px;
+  display: block;
+}
+
 .footer__sushi-map {
+  margin-top: -2px;
 }
 
 .footer__contents {
@@ -138,7 +146,7 @@
 }
 
 .footer__icon img {
-  width: 86px; /* アイコンサイズ */
+  width: 86px;
   height: auto;
 }
 
@@ -154,4 +162,155 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
+}
+
+// fv
+.fv {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fv__bg img {
+  width: 100%;
+  display: block;
+}
+
+.fv__bg--bottom {
+  margin-top: -15px;
+}
+
+.fv__sea {
+  width: 100%;
+  display: block;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -160px;
+}
+
+.fv__title-back {
+  position: absolute;
+  top: 39%;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.fv__mask {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+  display: block;
+}
+
+.fv__contents {
+  position: absolute;
+  top: 29%;
+  left: 0;
+}
+.fv__top-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 25px;
+  color: $color-text-blue;
+}
+
+.fv__main {
+  padding-top: 210px;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.fv__title img {
+  position: relative;
+  z-index: 3;
+  width: 70%;
+}
+
+.fv__title-sub {
+  position: relative;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  z-index: 3;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+.fv__lead {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 2px;
+  z-index: 3;
+  text-align: left;
+  width: 498px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.fv-links {
+  position: absolute;
+  top: 860px;
+  right: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  z-index: 4;
+}
+
+.fv-link--true {
+  margin-left: -70px;
+}
+
+.fv-link--sowhat {
+  margin-left: -140px;
+}
+
+.fv-link--about {
+  margin-left: -210px;
+}
+
+.fv-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  z-index: 4;
+}
+
+.fv-link__icon svg {
+  width: 51px;
+  height: 26px;
+  display: block;
+}
+
+.fv-link__icon svg + svg {
+  margin-top: 3px;
+}
+
+.fv-link__title-en {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.fv-link__title-en span {
+  font-weight: 500;
+}
+
+.fv-link__title-jp {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 3px;
+  letter-spacing: 4.8px;
+  margin-top: 10px;
 }
