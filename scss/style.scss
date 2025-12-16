@@ -314,3 +314,16 @@
   letter-spacing: 4.8px;
   margin-top: 10px;
 }
+
+.fv__text-bottom {
+  color: #e0e741;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 2px;
+  z-index: 3;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}

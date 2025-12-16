@@ -243,6 +243,7 @@
 }
 
 .glossary-book__right {
+  position: relative;
   text-align: center;
   color: $color-text-blue;
   margin-top: 100px;
@@ -253,6 +254,8 @@
   font-size: 18px;
   font-weight: 900;
   line-height: 32px;
+  position: relative;
+  z-index: 2;
 }
 
 .glossary-book__title {
@@ -260,6 +263,8 @@
   font-style: normal;
   font-weight: 900;
   line-height: 32px;
+  position: relative;
+  z-index: 2;
 }
 
 .glossary-book__text {
@@ -271,13 +276,27 @@
   text-align: left;
   margin-left: 130px;
   margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.glossary-book__right-bg {
+  display: none;
+  width: 80%;
+  min-height: 540px;
+  position: absolute;
+  top: -101px;
+  left: 50px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .glossary-book__detail-btn {
   background: #26648a;
   width: 110px;
   height: 36px;
-  margin-left: 350px;
+  // margin-left: 350px;
   color: #fff;
   line-height: 32px;
   font-weight: 900;
@@ -285,6 +304,10 @@
   align-items: center;
   gap: 6px;
   padding-left: 20px;
+  position: absolute;
+  bottom: 160px;
+  right: 100px;
+  z-index: 2;
 }
 
 .glossary-book__detail {
@@ -440,7 +463,7 @@
   background: #26648a;
   width: 110px;
   height: 36px;
-  margin-left: 350px;
+  // margin-left: 350px;
   color: #fff;
   line-height: 32px;
   font-weight: 900;
@@ -448,6 +471,9 @@
   align-items: center;
   gap: 6px;
   padding-left: 20px;
+  position: absolute;
+  bottom: 160px;
+  right: 100px;
 }
 
 .dictionary-book__detail {

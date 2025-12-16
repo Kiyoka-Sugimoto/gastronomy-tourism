@@ -13,8 +13,23 @@
 
     <!-- noindex -->
     <meta name="robots" content="noindex, nofollow,noarchive" />
+
     <script src="./js/main.js" defer></script>
     <script src="./js/about.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LQMFC8EL4X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LQMFC8EL4X");
+    </script>
   </head>
   <body>
     <!-- header -->
@@ -179,6 +194,7 @@
                       sushi. Nigiri, or nigiri sushi meaning hand-pressed sushi,
                       is a different style in the same category.
                     </p>
+                    <div class="glossary-book__right-bg"></div>
                     <p class="glossary-book__detail">
                       <a href="" class="glossary-book__detail-btn">
                         ▶︎ <span>Detail</span>
@@ -276,10 +292,9 @@
                     </p>
                     <h2 class="dictionary-book__title">Maguro</h2>
                     <p class="dictionary-book__text">
-                      Text text text text text text text text text text text
-                      text text text text Text text text text text text text
-                      text text text text text text text text Text text text
-                      text text text text text text text
+                      Maguro, or tuna in English, is a favorite sushi fish. In
+                      Japan, people often use maguro sushi to judge the quality
+                      of a sushi bar or restaurant.
                     </p>
                     <p class="dictionary-book__detail">
                       <a href="" class="dictionary-book__detail-btn">
@@ -429,11 +444,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <img
-        src="./img/decor/footer_decor.png"
-        alt=""
-        class="footer__decor"
-      />
+      <img src="./img/decor/footer_decor.png" alt="" class="footer__decor" />
       <img src="./img/footer_sushi_map.png" alt="" class="footer__sushi-map" />
       <div class="footer__contents">
         <img src="./img/footer_bg.png" alt="" />

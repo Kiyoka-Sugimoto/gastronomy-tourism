@@ -11,9 +11,24 @@
       rel="stylesheet"
     />
 
+
     <!-- noindex -->
     <meta name="robots" content="noindex, nofollow,noarchive" />
     <script src="./js/main.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LQMFC8EL4X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LQMFC8EL4X");
+    </script>
   </head>
   <body>
     <!-- header -->
@@ -194,25 +209,27 @@
                   </svg>
                 </div>
                 <div class="fv-link__texts">
-                  <p class="fv-link__title-en">
-                    ABOUT <span>Sushi</span>
-                  </p>
+                  <p class="fv-link__title-en">ABOUT <span>Sushi</span></p>
                   <p class="fv-link__title-jp">寿司の知識</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <p class="fv__text-bottom">
+          From the depth of the sea to the peaks of the Alps – The diversity
+          born from Toyama’s 4000m elevation range.
+        </p>
       </section>
 
       <section class="menu">
-        <img src="./img/top_bg.jpg" alt="">
+        <img src="./img/top_bg.jpg" alt="" />
       </section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
-      <img src="./img/decor/footer_decor.png" alt="" class="footer__decor">
+      <img src="./img/decor/footer_decor.png" alt="" class="footer__decor" />
       <img src="./img/footer_sushi_map.png" alt="" class="footer__sushi-map" />
       <div class="footer__contents">
         <img src="./img/footer_bg.png" alt="" />
