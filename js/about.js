@@ -202,7 +202,7 @@ const dictionaryData = {
     subLabel: "うに",
     category: "Sea & River Ingredients",
     title: "Unii",
-    text: "Text text text text  text text text  text text text  text text text  text text Text text text text  text text text  text text text  text text text  text text Text text text text  text text text  text text text",
+    text: "Uni in sushi refers to sea urchin in Japanese, and the rich, acquired taste of uni sushi made with its roe continues to fascinate sushi lovers.",
     link: "#",
   },
 
