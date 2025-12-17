@@ -883,38 +883,73 @@ html {
 
 .sowhat-lead-project__inner {
   padding-top: 100px;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
-.project__cards {
+.project {
+  position: relative;
+  margin-top: 140px;
+}
+
+.project__bg-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 87.45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
+  z-index: 0;
+}
+
+.project__bg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project__contents {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project__card {
+  margin-top: -40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 70px 30px;
   width: 630px;
   text-align: center;
-  margin-top: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 100px 30px;
-}
-
-.project-contents {
-  width: 87.45%;
 }
 
 .project__item img {
   width: 291px;
   height: 182px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project__title {
+  margin-top: 15px;
   font-size: 20px;
   font-weight: 900;
   line-height: 32px;
-  margin-top: 15px;
 }
 
 .project__text {
+  margin-top: 8px;
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
