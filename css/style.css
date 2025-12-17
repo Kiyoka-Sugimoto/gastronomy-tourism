@@ -1944,6 +1944,49 @@ html {
   left: 0;
 }
 
+.fv__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: -82%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.fv__btn-top {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.fv__btn-img {
+  width: 110px;
+  height: auto;
+}
+
+.fv__btn-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fv__btn-label {
+  color: #26648a;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 25px;
+  z-index: 3;
+  margin-top: -40px;
+}
+
 .fv__top-text {
   text-align: center;
   font-size: 24px;
