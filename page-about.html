@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
 
     <!-- noindex -->
     <meta name="robots" content="noindex, nofollow,noarchive" />
-
+    <!-- js -->
     <script src="./js/main.js" defer></script>
     <script src="./js/about.js" defer></script>
     <!-- Google tag (gtag.js) -->
@@ -40,15 +40,59 @@
             <img src="./img/logo.png" alt="Toyama Gastronomy Tourism ロゴ" />
           </a>
         </h1>
-        <button class="header__nav-toggle">
+        <button class="header__nav-toggle" id="navOpen">
           <img src="./img/icon_menu.png" alt="メニューを開く" />
         </button>
 
         <!-- nav menu -->
-        <nav class="header__nav-menu">
-          <ul>
-            <li><a href=""></a></li>
-          </ul>
+        <nav class="header-nav__menu" id="navMenu">
+          <button class="header-nav__close" id="navClose">
+            <img src="./img/nav_close.png" alt="" />
+          </button>
+          <div class="header-nav__inner">
+            <div class="header-nav__left">
+              <h1 class="header-nav__logo">
+                <a href="index.html"><img
+                  src="./img/header_nav_logo.png"
+                  alt="Toyama Gastronomy Tourism ロゴ"
+                /></a>
+              </h1>
+            </div>
+            <ul class="header-nav__list">
+              <li><a href="./page-why.html">WHY Toyama Sushi is Diverse</a></li>
+              <li>
+                <a href="./page-true.html">TRUE Diversity of Toyama Sushi</a>
+              </li>
+              <li><a href="./page-sowhat.html">SO WHAT ?</a></li>
+              <li><a href="./page-about.html">ABOUT Sushi</a></li>
+            </ul>
+            <div class="header-nav__cta">
+              <a
+                href="http://map.logtrip.info/map/"
+                class="nav-btn nav-btn--map"
+                >TOYAMA SUSHI MAP</a
+              >
+              <a href="#" class="nav-btn nav-btn--survey">Go to SURVEY</a>
+              <a href="#" class="nav-btn nav-btn--contact">CONTACT</a>
+              <div class="header-nav__sns">
+                <a href=""
+                  ><img
+                    src="./img/nav_sns_icon_insta.png"
+                    alt=""
+                    class="nav-icon"
+                /></a>
+                <a href=""
+                  ><img
+                    src="./img/nav_sns_iocn_youtube.png"
+                    alt=""
+                    class="nav-icon"
+                /></a>
+                <a href=""
+                  ><img src="./img/nav_sns_icon_x.png" alt="" class="nav-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
         </nav>
         <!-- /nav menu -->
       </div>
@@ -445,9 +489,13 @@
     <!-- footer -->
     <footer class="footer">
       <img src="./img/decor/footer_decor.png" alt="" class="footer__decor" />
-      <img src="./img/footer_sushi_map.png" alt="" class="footer__sushi-map" />
+      <a
+        href="http://map.logtrip.info/map/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img src="./img/footer_sushi_map.png" alt="" class="footer__sushi-map"
+      /></a>
       <div class="footer__contents">
-        <img src="./img/footer_bg.png" alt="" />
         <div class="footer__inner">
           <h3 class="footer__title">About Us</h3>
           <div class="footer__lead">
@@ -482,7 +530,9 @@
               </p>
             </div>
           </div>
-          <a href="https://forms.gle/FGxYXQTtKHjEPFdv9" class="btn-contact">Take Our Survey</a>
+          <a href="https://forms.gle/FGxYXQTtKHjEPFdv9" class="btn-contact"
+            >Take Our Survey</a
+          >
           <div class="footer__icon">
             <img src="./img/icon_wave.png" alt="" />
             <img src="./img/icon_mountain.png" alt="" class="icon__muntain" />

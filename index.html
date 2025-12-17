@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,7 @@
 
     <!-- noindex -->
     <meta name="robots" content="noindex, nofollow,noarchive" />
+    <!-- ｊｓ -->
     <script src="./js/main.js" defer></script>
     <!-- Google tag (gtag.js) -->
     <script
@@ -38,15 +39,60 @@
             <img src="./img/logo.png" alt="Toyama Gastronomy Tourism ロゴ" />
           </a>
         </h1>
-        <button class="header__nav-toggle">
+        <button class="header__nav-toggle" id="navOpen">
           <img src="./img/icon_menu.png" alt="メニューを開く" />
         </button>
 
         <!-- nav menu -->
-        <nav class="header__nav-menu">
-          <ul>
-            <li><a href=""></a></li>
-          </ul>
+        <nav class="header-nav__menu" id="navMenu">
+          <button class="header-nav__close" id="navClose">
+            <img src="./img/nav_close.png" alt="" />
+          </button>
+          <div class="header-nav__inner">
+            <div class="header-nav__left">
+              <h1 class="header-nav__logo">
+                <a href="index.html"
+                  ><img
+                    src="./img/header_nav_logo.png"
+                    alt="Toyama Gastronomy Tourism ロゴ"
+                /></a>
+              </h1>
+            </div>
+            <ul class="header-nav__list">
+              <li><a href="./page-why.html">WHY Toyama Sushi is Diverse</a></li>
+              <li>
+                <a href="./page-true.html">TRUE Diversity of Toyama Sushi</a>
+              </li>
+              <li><a href="./page-sowhat.html">SO WHAT ?</a></li>
+              <li><a href="./page-about.html">ABOUT Sushi</a></li>
+            </ul>
+            <div class="header-nav__cta">
+              <a
+                href="http://map.logtrip.info/map/"
+                class="nav-btn nav-btn--map"
+                >TOYAMA SUSHI MAP</a
+              >
+              <a href="#" class="nav-btn nav-btn--survey">Go to SURVEY</a>
+              <a href="#" class="nav-btn nav-btn--contact">CONTACT</a>
+              <div class="header-nav__sns">
+                <a href=""
+                  ><img
+                    src="./img/nav_sns_icon_insta.png"
+                    alt=""
+                    class="nav-icon"
+                /></a>
+                <a href=""
+                  ><img
+                    src="./img/nav_sns_iocn_youtube.png"
+                    alt=""
+                    class="nav-icon"
+                /></a>
+                <a href=""
+                  ><img src="./img/nav_sns_icon_x.png" alt="" class="nav-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
         </nav>
         <!-- /nav menu -->
       </div>
@@ -76,12 +122,12 @@
               <img src="./img/fv_title.png" alt="" />
             </h1>
             <h2 class="fv__title-sub">富山ガストロノミー ツーリズム</h2>
-            <p class="fv__lead">
+            <!-- <p class="fv__lead">
               Text text text text text text text text text text text text text
               text text text text text text text text text text text text text
               text text text text text text text text text text text text text
               text text text text text text text text text
-            </p>
+            </p> -->
 
             <!-- link -->
             <div class="fv-links">
@@ -247,7 +293,11 @@
             ></video>
           </div>
           <div class="video-section__cta">
-            <a href="" target="_blank" rel="noopener" class="video-section__btn"
+            <a
+              href="https://www.youtube.com/watch?v=ErR73FDdsnY"
+              target="_blank"
+              rel="noopener"
+              class="video-section__btn"
               ><span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -282,9 +332,13 @@
     <!-- footer -->
     <footer class="footer">
       <img src="./img/decor/footer_decor.png" alt="" class="footer__decor" />
-      <img src="./img/footer_sushi_map.png" alt="" class="footer__sushi-map" />
+      <a
+        href="http://map.logtrip.info/map/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img src="./img/footer_sushi_map.png" alt="" class="footer__sushi-map"
+      /></a>
       <div class="footer__contents">
-        <img src="./img/footer_bg.png" alt="" />
         <div class="footer__inner">
           <h3 class="footer__title">About Us</h3>
           <div class="footer__lead">
