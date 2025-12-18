@@ -1899,216 +1899,63 @@ html {
 .fv {
   position: relative;
   width: 100%;
+  min-height: 100svh;
   overflow: hidden;
 }
 
-.fv__bg img {
-  width: 100%;
-  display: block;
-}
-
-.fv__bg--bottom {
-  margin-top: -15px;
-}
-
-.fv__sea {
-  width: 100%;
-  display: block;
-  margin-top: -30px;
+.fv__bg {
   position: relative;
-  z-index: 2;
-  margin-bottom: -160px;
 }
 
-.fv__title-back {
-  position: absolute;
-  top: 39%;
-  left: 0;
-  width: 100%;
-  z-index: 3;
+.fv-bg__top-wrap {
+  position: relative;
 }
 
-.fv__mask {
-  position: absolute;
-  top: 55%;
-  left: 0;
+.fv__top {
   width: 100%;
-  z-index: 2;
-  pointer-events: none;
   display: block;
 }
 
-.fv__contents {
+.fv__copy {
   position: absolute;
-  top: 29%;
-  left: 0;
-}
-
-.fv__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: -82%;
+  top: 90%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-.fv__btn-top {
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-}
-
-.fv__btn-img {
-  width: 110px;
-  height: auto;
-}
-
-.fv__btn-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.fv__btn-label {
-  color: #26648a;
-  text-align: center;
   font-size: 24px;
   font-weight: 900;
   line-height: 25px;
   z-index: 3;
-  margin-top: -40px;
-}
-
-.fv__top-text {
   text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 25px;
+  white-space: nowrap;
   color: #26648A;
 }
 
-.fv__main {
-  padding-top: 210px;
-  padding-left: 95px;
-  padding-right: 95px;
+.fv__bottom {
+  margin-top: -15px;
 }
 
-.fv__title img {
+.fv-bg__sea-wrap {
   position: relative;
-  z-index: 3;
-  width: 70%;
 }
 
-.fv__title-sub {
-  position: relative;
-  color: #fff;
-  font-size: 32px;
-  font-weight: 900;
-  z-index: 3;
-  margin-top: 70px;
-  margin-left: 20px;
+.fv-bg__sea {
+  margin-top: -40px;
 }
 
-.fv__lead {
-  position: relative;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 2px;
-  z-index: 3;
-  text-align: left;
-  width: 498px;
-  margin-top: 40px;
-  margin-left: 20px;
-}
-
-.fv-links {
+.fv-bg__mask {
   position: absolute;
-  top: 670px;
-  right: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 38px;
-  z-index: 4;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-@media (min-width: 1100px) {
-  .fv-links {
-    top: 750px;
-    right: 150px;
-  }
-}
-@media (min-width: 1300px) {
-  .fv-links {
-    top: 850px;
-    right: 150px;
-  }
-}
-.fv-link--true {
-  margin-left: -70px;
-}
-
-.fv-link--sowhat {
-  margin-left: -140px;
-}
-
-.fv-link--about {
-  margin-left: -210px;
-}
-
-.fv-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 12px;
-  z-index: 4;
-}
-
-.fv-link__icon svg {
-  width: 51px;
-  height: 26px;
-  display: block;
-}
-
-.fv-link__icon svg + svg {
-  margin-top: 3px;
-}
-
-.fv-link__title-en {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 25px;
-}
-
-.fv-link__title-en span {
-  font-weight: 500;
-}
-
-.fv-link__title-jp {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 3px;
-  letter-spacing: 4.8px;
-  margin-top: 10px;
+.fv-bg__back {
+  position: absolute;
+  top: -22%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .fv__text-bottom {
@@ -2119,9 +1966,140 @@ html {
   letter-spacing: 2px;
   z-index: 3;
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   width: 100%;
   text-align: center;
+}
+
+.fv__contents {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+.fv__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.fv__btn-item {
+  text-decoration: none;
+  color: #26648a;
+  font-weight: 900;
+}
+
+.fv__btn-item img {
+  width: 110px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fv__btn-item span {
+  display: block;
+  margin-top: -40px;
+  font-size: 24px;
+}
+
+.fv__title {
+  margin-top: 54%;
+  width: 70%;
+  margin-left: 95px;
+}
+
+.fv__title-sub {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: normal;
+  text-align: left;
+  margin-left: 110px;
+  margin-top: 60px;
+}
+
+.fv__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  z-index: 10;
+  margin-top: 80px;
+  position: absolute;
+  right: 150px;
+}
+
+.fv-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.fv-nav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+
+.fv-link__icon svg {
+  width: 51px;
+  height: 26px;
+  display: block;
+}
+
+.fv-nav__en {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.fv-nav__en span {
+  font-weight: 500;
+}
+
+.fv-nav__jp {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 4.8px;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.fv-nav__icon--red {
+  margin-left: -70px;
+}
+
+.fv-nav__icon--blue {
+  margin-left: -140px;
+}
+
+.fv-nav__icon--green {
+  margin-left: -210px;
 }
 
 .video-section {
