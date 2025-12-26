@@ -1,0 +1,24 @@
+$pc: 1300px;
+$tb: 1024px;
+$sp: 768px;
+$min: 375px;
+
+
+@mixin tb {
+  @media (max-width: $tb) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: $sp) {
+    @content;
+  }
+}
+
+@mixin min {
+  @media (max-width: $min) {
+    @content;
+  }
+}
+

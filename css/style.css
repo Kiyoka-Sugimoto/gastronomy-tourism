@@ -10,6 +10,11 @@ html {
   display: inline-block;
   padding-bottom: 10px;
 }
+@media (max-width: 1024px) {
+  .why__title {
+    font-size: 30px;
+  }
+}
 
 .why__title-sub {
   margin-top: 24px;
@@ -78,11 +83,23 @@ html {
   margin-left: auto;
   margin-right: auto;
   padding-top: 93px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .why-lead__title {
   font-size: 40px;
   font-weight: 900;
+}
+@media (max-width: 1024px) {
+  .why-lead__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .why-lead__title {
+    font-size: 26px;
+  }
 }
 
 .why-lead__sub {
@@ -91,10 +108,16 @@ html {
   font-weight: 700;
   letter-spacing: 8px;
 }
+@media (max-width: 1024px) {
+  .why-lead__sub {
+    font-size: 14px;
+  }
+}
 
 .why-lead__text-contents {
   margin-top: 24px;
   text-align: left;
+  max-width: 1000px;
 }
 .why-lead__text-contents p {
   font-size: 22px;
@@ -118,6 +141,17 @@ html {
 
 .why-lead-unique__sub {
   letter-spacing: 1.6px;
+}
+
+@media (max-width: 1110px) {
+  .why_lead-unique__list {
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 900px) {
+  .why_lead-unique__list {
+    padding-bottom: 300px;
+  }
 }
 
 .unique-contents {
@@ -147,7 +181,7 @@ html {
 
 .unique__inner {
   position: absolute;
-  top: 70%;
+  top: 230px;
   left: 40%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -161,11 +195,16 @@ html {
 }
 
 .unique__inner--rivers {
-  top: 105%;
+  top: 380px;
+}
+@media (max-width: 900px) {
+  .unique__inner--rivers {
+    top: 430px;
+  }
 }
 
 .unique__inner--left--bay {
-  top: 140%;
+  top: 530px;
 }
 
 .unique__top {
@@ -196,8 +235,7 @@ html {
   font-size: 22px;
   text-align: left;
   margin-left: 80px;
-  margin-top: 10px;
-  width: 610px;
+  max-width: 610px;
   line-height: 34px;
 }
 
@@ -212,7 +250,7 @@ html {
 
 .unique__bottom-img img {
   aspect-ratio: 291/182;
-  width: 100%;
+  width: calc(50% - 15px);
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -223,6 +261,7 @@ html {
   background: #e1eada;
   color: #26648A;
   padding-bottom: 150px;
+  overflow-x: hidden;
 }
 
 .why-lead-nature__top {
@@ -289,6 +328,7 @@ html {
 .nature__text {
   margin-left: 220px;
   margin-top: -30px;
+  max-width: calc(100% - 120px);
 }
 
 .true_title {
